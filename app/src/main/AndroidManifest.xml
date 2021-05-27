@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.here.poc">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.fs.poc.ExampleApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.fs.poc.ui.login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fs.poc.detection.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fs.poc.LaunchActivity"></activity>
+        <activity
+            android:name="com.fs.poc.RoadSignsActivity"
+            android:label="@string/ls_road_signs" />
+        <activity
+            android:name="com.fs.poc.RoadBasicsActivity"
+            android:label="@string/ls_road_basics" />
+        <activity android:name="com.fs.poc.view.BaseActivity" />
+
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="2HloL6i1H95c38tX9pC1" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="cUR6GBtJ3B9Dw_T4wX62mg" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="kC4pssOZuA//dsMK1VfIAfZrELmzhAlWMT96t9UdIsWxGQNAZz3WD+THky2B+tp045d3bP7lZZS5foEdpNgLsgGNktHJ87SU17P2t18MK6XNHUxtd2TYBVBwYAERi0+9ym24V7MzFU7eidl9NBtFXMbkbbAigQDMow33Ro81KNVEPGPQmdap1JNRCJjmIpAqeNBa1L2Uud3/TKKZvxn8TsNOh1CbTpFcvK8sJ+00m69hPeKdJ+MnR2h9zjBtX9eZ3/uUvywGx9/HjH1l/cpUOB9Kllr2hE99usJj9pdAypD++YmjvZg2q2jIW1qs4gW1hSqMFuz2lDcXSb83UxDIQH/xwheA1E8fgwZaClLhmoy59VzrPYeTOCFq2Tb46q/Oo0o5Vm+uX7NcSRoLP7PPzWrL2KEgrVrz0nckNNGth6Rm3mA6UoPtDYzcZQQl8DMWFTzuK6X220kUZASp/FU88Rd447EBPKLbBTr1xwRSFO7+/xRMVPywDiEIZBUhvmQsx1f7Cx7F2raTjr6Ud0zU4D+4tQKnAZAEFJvnUlCJLeuXAkhQlJcM5F9uP7ChxtX12WO4x8g9A+UAXVqpwuijkVB76dclboqwOgvHFXKizsxk6uaVeGp8+Kv+UpI6RquDxF+H66zatiTYpJQIomb6/ff9RgKzrZew3Kw3jktArGc=" />
+    </application>
+
+</manifest>

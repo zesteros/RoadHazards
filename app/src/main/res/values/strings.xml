@@ -1,0 +1,20 @@
+<resources>
+    <string name="ls_road_signs">POC RoadSigns</string>
+    <string name="ls_road_basics">POC RoadBasics</string>
+    <string name="permission_reason">Camera permission is required for this example</string>
+    <string name="title_activity_splash">POC</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Su nombre de usuario</string>
+    <string name="prompt_password">Su contraseña</string>
+    <string name="action_sign_in">Ingresar</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >1 characters</string>
+    <string name="login_failed">"Usuario o contraseña incorrecta"</string>
+</resources>
